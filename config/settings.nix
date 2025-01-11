@@ -9,9 +9,9 @@
         vim.fn.sign_define("diagnosticsigninfo", { text = " ", texthl = "diagnosticinfo", linehl = "", numhl = "" })
       '';
 
-    clipboard = {
-      providers.wl-copy.enable = true;
-    };
+    # clipboard = {
+    # providers.wl-copy.enable = true;
+    # };
 
     opts = {
       # Show line numbers
@@ -21,7 +21,7 @@
       relativenumber = true;
 
       # Use the system clipboard
-      clipboard = "unnamedplus";
+      # clipboard = "unnamedplus";
 
       # Number of spaces that represent a <TAB>
       tabstop = 2;
