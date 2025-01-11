@@ -489,56 +489,5 @@
         desc = "Previous Tab";
       };
     }
-    # vscode style insert mode keymaps
-    {
-      # comment line
-      mode = "i";
-      key = "<D-/>";
-      action = "<ESC>gcci";
-      options.desc = "Comment Line";
-    }
-    {
-      options.desc = "Jump to end of line";
-      mode = "i";
-      key = "<D-Right>";
-      action = "<C-o>$";
-    }
-    {
-      options.desc = "Jump to start of line";
-      mode = "i";
-      key = "<D-Left>";
-      action = "<C-o>0";
-    }
-    {
-      options.desc = "Jump to beginning";
-      mode = "i";
-      key = "<D-Up>";
-      action = "<C-o>gg";
-    }
-    {
-      options.desc = "Jump to end";
-      mode = "i";
-      key = "<D-Down>";
-      action = "<C-o>G";
-    }
-    {
-      options.desc = "Jump to next word";
-      mode = "i";
-      key = "<M-Right>";
-      action = "<ESC>wi";
-    }
-    {
-      options.desc = "Jump to previous word";
-      mode = "i";
-      key = "<M-Left>";
-      action = "<ESC>bi";
-    }
-    {
-      options.desc = "Delete previous word";
-      mode = "i";
-      key = "<M-Backspace>";
-      action = "<ESC>bdwi";
-
-    }
   ];
 }
