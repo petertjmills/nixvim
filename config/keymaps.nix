@@ -494,7 +494,7 @@
       # comment line
       mode = "i";
       key = "<D-/>";
-      action = "<C-o>^i#<esc>";
+      action = "<ESC>gcci";
       options.desc = "Comment Line";
     }
     {
@@ -502,7 +502,6 @@
       mode = "i";
       key = "<D-Right>";
       action = "<C-o>$";
-
     }
     {
       options.desc = "Jump to start of line";
@@ -526,19 +525,20 @@
       options.desc = "Jump to next word";
       mode = "i";
       key = "<M-Right>";
-      action = "<C-o>w";
+      action = "<ESC>wi";
     }
     {
       options.desc = "Jump to previous word";
       mode = "i";
       key = "<M-Left>";
-      action = "<C-o>b";
+      action = "<ESC>bi";
     }
     {
       options.desc = "Delete previous word";
       mode = "i";
       key = "<M-Backspace>";
-      action = "<C-o>bdw";
+      action = "<ESC>bdwi";
+
     }
   ];
 }
