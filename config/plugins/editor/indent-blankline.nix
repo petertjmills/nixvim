@@ -1,7 +1,7 @@
 {
   plugins = {
-    indent-blankline = {
-      enable = true;
-    };
+    # indent-blankline = {
+    #   enable = true;
+    # };
   };
 }
