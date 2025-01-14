@@ -489,5 +489,16 @@
         desc = "Previous Tab";
       };
     }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<leader>y";
+      action = "\"+y";
+      options = {
+        desc = "Yank (Copy) to clipboard";
+      };
+    }
   ];
 }
